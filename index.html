@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NEXORA | Robotics & Engineering</title>
+  <meta name="description"
+        content="Explore robotics, intelligent automation and future-ready engineering solutions.">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Tailwind configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#050816",
+            panel: "#0B1225",
+            cyan: "#52E5FF",
+            violet: "#8B5CF6"
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+
+<body class="bg-ink text-white antialiased">
+
+  <!-- Background -->
+  <div class="background-grid"></div>
+  <div class="orb orb-one"></div>
+  <div class="orb orb-two"></div>
+
+  <!-- Navigation -->
+  <header class="fixed top-0 z-50 w-full nav-glass">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+
+      <a href="#home" class="flex items-center gap-3">
+        <span class="logo-icon">N</span>
+        <span class="text-xl font-bold tracking-wider">
+          NEXORA<span class="text-cyan">.</span>
+        </span>
+      </a>
+
+      <div id="navLinks"
+           class="nav-links hidden md:flex items-center gap-8 text-sm text-slate-300">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <a href="#contact" class="hidden sm:inline-flex primary-btn">
+        Let's Talk <span>↗</span>
+      </a>
+
+      <button id="menuBtn"
+              class="text-2xl md:hidden"
+              aria-label="Toggle navigation"
+              aria-expanded="false">
+        ☰
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="home"
+      class="relative flex min-h-screen items-center overflow-hidden pt-28">
+
+      <div class="mx-auto grid w-full max-w-7xl items-center gap-12 px-6 py-16 lg:grid-cols-2">
+
+        <div class="reveal">
+          <div class="eyebrow mb-6">
+            <span class="pulse-dot"></span>
+            ENGINEERING TOMORROW
+          </div>
+
+          <h1 class="max-w-3xl text-5xl font-semibold leading-tight tracking-tight md:text-7xl">
+            Building a
+            <span class="gradient-text">Smarter</span>
+            <br>
+            <span class="gradient-text">Future.</span>
+          </h1>
+
+          <p class="mt-7 max-w-xl text-base leading-8 text-slate-400 md:text-lg">
+            We engineer intelligent machines, autonomous systems and
+            next-generation robotics that turn ambitious ideas into reality.
+          </p>
+
+          <div class="mt-9 flex flex-wrap gap-4">
+            <a href="#projects" class="primary-btn">
+              Explore Projects <span>↗</span>
+            </a>
+            <a href="#about" class="secondary-btn">
+              Discover Nexora
+            </a>
+          </div>
+
+          <div class="mt-12 grid max-w-lg grid-cols-3 gap-5 border-t border-white/10 pt-7">
+            <div>
+              <h3 class="counter text-3xl font-semibold" data-target="24">0</h3>
+              <p class="mt-2 text-xs text-slate-400">Projects</p>
+            </div>
+            <div>
+              <h3 class="counter text-3xl font-semibold" data-target="12">0</h3>
+              <p class="mt-2 text-xs text-slate-400">Technologies</p>
+            </div>
+            <div>
+              <h3 class="counter text-3xl font-semibold" data-target="100">0</h3>
+              <p class="mt-2 text-xs text-slate-400">Ideas explored</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="image-frame">
+            <img
+              src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=85"
+              alt="Futuristic robotics technology"
+              class="hero-image">
+
+            <div class="image-shade"></div>
+
+            <div class="floating-card card-top">
+              <span class="status-dot"></span>
+              SYSTEMS ONLINE
+            </div>
+
+            <div class="floating-card card-bottom">
+              <span class="text-cyan">✳</span>
+              <div>
+                <p class="text-sm font-semibold">Intelligence meets engineering</p>
+                <p class="mt-1 text-xs text-slate-400">
+                  Designing what comes next.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="visual-ring"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Moving technology strip -->
+    <div class="ticker-wrap">
+      <div class="ticker">
+        <span>ROBOTICS ✳</span>
+        <span>INTELLIGENT AUTOMATION ✳</span>
+        <span>MECHANICAL DESIGN ✳</span>
+        <span>AI ENGINEERING ✳</span>
+        <span>FUTURE SYSTEMS ✳</span>
+        <span>ROBOTICS ✳</span>
+        <span>INTELLIGENT AUTOMATION ✳</span>
+        <span>MECHANICAL DESIGN ✳</span>
+        <span>AI ENGINEERING ✳</span>
+        <span>FUTURE SYSTEMS ✳</span>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section id="about" class="section-pad">
+      <div class="mx-auto max-w-7xl px-6">
+
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 / WHO WE ARE</p>
+          <h2 class="section-title">
+            Engineering beyond
+            <span class="gradient-text">limits.</span>
+          </h2>
+          <p class="section-description">
+            Nexora brings together creative thinking, engineering principles
+            and emerging technology to solve complex real-world challenges.
+          </p>
+        </div>
+
+        <div class="grid gap-5 md:grid-cols-3">
+
+          <article class="feature-card reveal">
+            <div class="feature-icon">⌘</div>
+            <h3>Intelligent Robotics</h3>
+            <p>
+              Explore robotic systems designed for precision, adaptability
+              and reliable real-world performance.
+            </p>
+            <span class="card-index">01</span>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon">⚙</div>
+            <h3>Mechanical Engineering</h3>
+            <p>
+              Transform concepts into functional designs through modelling,
+              prototyping and engineering analysis.
+            </p>
+            <span class="card-index">02</span>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon">✳</div>
+            <h3>Future Innovation</h3>
+            <p>
+              Connect automation, sensors and intelligent software to build
+              smarter engineering solutions.
+            </p>
+            <span class="card-index">03</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section-pad section-dark">
+      <div class="mx-auto max-w-7xl px-6">
+
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 / WHAT WE DO</p>
+          <h2 class="section-title">
+            From concept to
+            <span class="gradient-text">creation.</span>
+          </h2>
+          <p class="section-description">
+            A multidisciplinary approach to modern engineering and
+            technology development.
+          </p>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
+          <article class="service-card reveal">
+            <span class="service-number">01</span>
+            <div class="feature-icon">◈</div>
+            <h3>Robotics Design</h3>
+            <p>Robot concepts, mechanisms and automation systems.</p>
+            <a href="#contact">Discuss a project ↗</a>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">02</span>
+            <div class="feature-icon">⚙</div>
+            <h3>CAD & Prototyping</h3>
+            <p>Mechanical modelling, product design and prototypes.</p>
+            <a href="#contact">Discuss a project ↗</a>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">03</span>
+            <div class="feature-icon">⌁</div>
+            <h3>Smart Automation</h3>
+            <p>Connected devices, sensors and intelligent control.</p>
+            <a href="#contact">Discuss a project ↗</a>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">04</span>
+            <div class="feature-icon">✳</div>
+            <h3>Research & Innovation</h3>
+            <p>Explore emerging technologies and engineering ideas.</p>
+            <a href="#contact">Discuss a project ↗</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section-pad">
+      <div class="mx-auto max-w-7xl px-6">
+
+        <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end reveal">
+          <div>
+            <p class="eyebrow">03 / SELECTED WORK</p>
+            <h2 class="section-title">
+              Ideas made <span class="gradient-text">real.</span>
+            </h2>
+          </div>
+          <p class="max-w-md text-sm leading-7 text-slate-400">
+            A showcase of concept projects inspired by industrial robotics,
+            autonomous systems and intelligent manufacturing.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 md:grid-cols-2">
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=1000&q=85"
+                alt="Industrial automation concept">
+              <span class="project-tag">AUTOMATION</span>
+            </div>
+            <div class="project-info">
+              <div>
+                <p class="project-category">INDUSTRY 4.0</p>
+                <h3>Smart Factory Systems</h3>
+              </div>
+              <span class="project-arrow">↗</span>
+            </div>
+            <p class="project-description">
+              A concept for connected manufacturing, efficient workflows
+              and intelligent industrial processes.
+            </p>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1000&q=85"
+                alt="Engineering development workspace">
+              <span class="project-tag">ENGINEERING</span>
+            </div>
+            <div class="project-info">
+              <div>
+                <p class="project-category">PRODUCT DEVELOPMENT</p>
+                <h3>Precision Engineering</h3>
+              </div>
+              <span class="project-arrow">↗</span>
+            </div>
+            <p class="project-description">
+              A product-development concept focused on accuracy,
+              mechanical design and iterative prototyping.
+            </p>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=85"
+                alt="Modern architecture and advanced infrastructure">
+              <span class="project-tag">SMART SYSTEMS</span>
+            </div>
+            <div class="project-info">
+              <div>
+                <p class="project-category">CONNECTED TECHNOLOGY</p>
+                <h3>Intelligent Infrastructure</h3>
+              </div>
+              <span class="project-arrow">↗</span>
+            </div>
+            <p class="project-description">
+              Exploring how automation and connected technologies
+              can support modern infrastructure.
+            </p>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=85"
+                alt="Electronic circuit board and components">
+              <span class="project-tag">ELECTRONICS</span>
+            </div>
+            <div class="project-info">
+              <div>
+                <p class="project-category">EMBEDDED CONCEPTS</p>
+                <h3>Sensor Intelligence</h3>
+              </div>
+              <span class="project-arrow">↗</span>
+            </div>
+            <p class="project-description">
+              A concept for integrating electronic components,
+              sensor inputs and responsive systems.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="contact" class="section-pad">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="contact-panel reveal">
+          <div class="contact-glow"></div>
+          <p class="eyebrow">04 / LET'S BUILD THE FUTURE</p>
+          <h2 class="section-title">
+            Have an idea?
+            <br>
+            <span class="gradient-text">Let's engineer it.</span>
+          </h2>
+          <p class="mx-auto mt-5 max-w-xl text-sm leading-7 text-slate-400">
+            Whether you're exploring a robotics concept or planning an
+            engineering project, let's start a conversation.
+          </p>
+          <a href="mailto:hello@nexora.example" class="primary-btn mt-8">
+            Start a Conversation <span>↗</span>
+          </a>
+          <p class="mt-4 text-xs text-slate-500">
+            Replace this demo email with your real contact address.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10">
+    <div class="mx-auto flex max-w-7xl flex-col gap-5 px-6 py-8 sm:flex-row sm:items-center sm:justify-between">
+      <a href="#home" class="text-lg font-bold tracking-wider">
+        NEXORA<span class="text-cyan">.</span>
+      </a>
+
+      <p class="text-sm text-slate-500">
+        Engineering ideas into tomorrow.
+      </p>
+
+      <p class="text-xs text-slate-500">
+        © <span id="year"></span> Nexora. Demo website.
+      </p>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top">↑</button>
+
+</body>
+</html>
